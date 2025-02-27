@@ -1,50 +1,57 @@
-# tszx_fusai
+# 基于 AI 大模型的中医诊断系统
+  
+## 介绍  
+本项目是参加天数智芯大赛获得优秀奖的作品，主要是基于 Gitee AI 平台进行开发。  
+当前的中医领域正面临着多重挑战：从行业人才的严重短缺，到设备技术的滞后。而且，随着现代社会对健康需求的不断增长，许多中医师承受着巨大的压力。因此，我们的“新时代老中医”项目应运而生，旨在通过技术创新应对这些挑战，为大家提供一个更高效、更智能、更个性化的中医诊断、健康管理和中医传播平台。  
+  
+## 环境配置
 
-#### 介绍
-**本项目是参加天数智芯大赛获得优秀奖的作品，主要是基于Gitee Ai平台进行开发。**  
-当前的中医领域正面临着多重挑战：从行业人才的严重短缺，到设备技术的滞后。而且，随着现代社会对健康需求的不断增长，许多中医师承受着巨大的压力。因此，我们的‘新时代老中医’项目应运而生，旨在通过技术创新应对这些挑战，为大家提供一个更高效、更智能、更个性化的中医诊断、健康管理和中医传播平台。
+### 1. 安装 FFmpeg  
+以下是在一些常见操作系统上安装 FFmpeg 的基本步骤：  
 
-#### 环境配置
-1.  **安装FFmpeg**  
-以下是在一些常见操作系统上安装FFmpeg的基本步骤：  
-**Windows**  
-下载FFmpeg: 访问FFmpeg的官方网站或GitHub页面，下载适用于Windows的预编译二进制文件。  
-解压: 下载完成后，解压到你选择的目录。  
-添加到环境变量: 将FFmpeg的bin目录添加到你的系统环境变量中，这样你就可以在任何地方通过命令行调用FFmpeg。  
+#### Windows  
+1. 下载 FFmpeg：访问 FFmpeg 的官方网站或 [GitHub 页面](https://github.com/FFmpeg/FFmpeg) ，下载适用于 Windows 的预编译二进制文件。  
+2. 解压：下载完成后，解压到你选择的目录。  
+3. 添加到环境变量：将 FFmpeg 的 `bin` 目录添加到你的系统环境变量中，这样你就可以在任何地方通过命令行调用 FFmpeg。  
 **macOS**  
 使用Homebrew: 如果你安装了Homebrew，可以通过以下命令安装FFmpeg：  
-bash  
-brew install ffmpeg  
+```bash
+  brew install ffmpeg  
+```
 手动下载: 你也可以从FFmpeg官网下载适用于macOS的预编译二进制文件，然后解压并将其添加到你的PATH环境变量中。  
 **Linux (Ubuntu/Debian)**  
 使用包管理器:  
-bash  
+```bash  
 sudo apt update  
 sudo apt install ffmpeg  
+``` 
 从源代码编译: 如果你想要安装最新版本的FFmpeg或者需要自定义配置，你可以从源代码编译。首先，你需要安装编译工具和依赖：  
-bash  
+```bash  
 sudo apt install build-essential yasm pkg-config  
 sudo apt install libx264-dev libx265-dev libvpx-dev libmp3lame-dev libopus-dev  
 sudo apt install libass-dev libfreetype6-dev libtheora-dev libvorbis-dev libvpx-dev  
 sudo apt install libxvidcore-dev libx264-dev libx265-dev  
+```
 然后下载FFmpeg源代码，解压并编译：  
-bash  
+```bash
 git clone https://github.com/FFmpeg/FFmpeg.git  
 cd FFmpeg  
 ./configure  
 make  
 sudo make install  
+```
 **验证安装**
 无论在哪个系统上，你都可以在命令行中输入以下命令来验证FFmpeg是否安装成功：  
-bash  
+```bash
 ffmpeg -version  
+```
 如果安装成功，你将看到FFmpeg的版本信息。  
-2.  **安装Python**
+2.  **安装Python**  
 Python>=3.8
-3.  **安装依赖**
-pip install -r requirements.txt
-4.  **运行项目**
-python app.py
+3.  **安装依赖**  
+pip install -r requirements.txt  
+4.  **运行项目**  
+python app.py  
 
 #### 功能介绍
 
